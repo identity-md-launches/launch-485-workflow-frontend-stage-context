@@ -1,0 +1,7 @@
+{
+  "fee": 3000,
+  "tickSpacing": 60,
+  "pairedCurrency": "0x0000000000000000000000000000000000000000",
+  "tokenContract": "LaunchToken",
+  "hookContract": null
+}

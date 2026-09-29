@@ -1,0 +1,10 @@
+# Explicitly budgeted frontend ignore file; patterns apply at every depth.
+node_modules/
+.cache/
+.npm/
+.vite/
+coverage/
+test-results/
+playwright-report/
+*.tsbuildinfo
+*.tgz

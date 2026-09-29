@@ -1,0 +1,204 @@
+{
+  "started": "2026-09-29T22:41:02.332Z",
+  "finished": "2026-09-29T22:41:55.085Z",
+  "command": "npm test --prefix web",
+  "deploymentManifestSha256": "112d81a73185dba0ee74745b0212df5b32523273d8d0afc0193dfa663acdc005",
+  "environment": {
+    "engine": "Chromium 145.0.7632.6 via Playwright",
+    "staticBase": "/preview/",
+    "rpc": "Mocked vetted RPC endpoints",
+    "wallet": "Mocked EIP-1193 browser wallet"
+  },
+  "screenshots": [
+    "docs/evidence/interaction-1440.png",
+    "docs/evidence/interaction-768.png",
+    "docs/evidence/interaction-390.png",
+    "docs/evidence/interaction-320.png"
+  ],
+  "results": [
+    {
+      "name": "Disconnected and missing-wallet state gives a recoverable connect action",
+      "status": "passed",
+      "durationMs": 121
+    },
+    {
+      "name": "Rejected wallet connection is reported and the control recovers",
+      "status": "passed",
+      "durationMs": 204
+    },
+    {
+      "name": "Wrong chain switches with the exact vetted add-chain parameters after error 4902",
+      "status": "passed",
+      "durationMs": 151
+    },
+    {
+      "name": "Connected reads, strict amount validation and stale quote invalidation",
+      "status": "passed",
+      "durationMs": 677
+    },
+    {
+      "name": "ETH buy simulates and sends exact router actions, native value, minimum output and deadline",
+      "status": "passed",
+      "durationMs": 455
+    },
+    {
+      "name": "Sell approvals are separate, exact and locked until confirmation before swapping",
+      "status": "passed",
+      "durationMs": 14059
+    },
+    {
+      "name": "Failed swap simulation exposes the reason and never asks the wallet to send",
+      "status": "passed",
+      "durationMs": 353
+    },
+    {
+      "name": "Wallet transaction rejection unlocks the action with persistent feedback",
+      "status": "passed",
+      "durationMs": 380
+    },
+    {
+      "name": "Slippage validation and changes discard previously reviewed quotes",
+      "status": "passed",
+      "durationMs": 768
+    },
+    {
+      "name": "Expired quotes require refresh and direction changes clear the output",
+      "status": "passed",
+      "durationMs": 369
+    },
+    {
+      "name": "Quote failure explains recovery without sending any transaction",
+      "status": "passed",
+      "durationMs": 298
+    },
+    {
+      "name": "Account changes during a delayed quote prevent stale results from enabling a swap",
+      "status": "passed",
+      "durationMs": 2234
+    },
+    {
+      "name": "Swap rechecks permissions immediately before signing",
+      "status": "passed",
+      "durationMs": 380
+    },
+    {
+      "name": "Revocation sends a zero token allowance and refreshes it after confirmation",
+      "status": "passed",
+      "durationMs": 305
+    },
+    {
+      "name": "A smaller existing token allowance is reset before granting a new amount",
+      "status": "passed",
+      "durationMs": 516
+    },
+    {
+      "name": "Account and chain events invalidate existing quotes and gate signing",
+      "status": "passed",
+      "durationMs": 420
+    },
+    {
+      "name": "Missing deployed bytecode prevents swap controls from enabling",
+      "status": "passed",
+      "durationMs": 109
+    },
+    {
+      "name": "Initialized zero active liquidity delegates executable pricing to the quoter",
+      "status": "passed",
+      "durationMs": 281
+    },
+    {
+      "name": "Uninitialized pools reject quotes before any signing request",
+      "status": "passed",
+      "durationMs": 256
+    },
+    {
+      "name": "Configured RPC fallback preserves reads and quotes when the first endpoint fails",
+      "status": "passed",
+      "durationMs": 305
+    },
+    {
+      "name": "A runtime ABI hash mismatch blocks the deployment with a recoverable error",
+      "status": "passed",
+      "durationMs": 43
+    },
+    {
+      "name": "Transient receipt RPC failures do not resubmit the transaction",
+      "status": "passed",
+      "durationMs": 670
+    },
+    {
+      "name": "Nested quoter liquidity reverts are translated into a specific readable error",
+      "status": "passed",
+      "durationMs": 298
+    },
+    {
+      "name": "Rendered 1440px reflow, keyboard access and automated WCAG checks",
+      "status": "passed",
+      "durationMs": 1516,
+      "details": {
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "connectedDocumentWidth": 1440,
+        "skipLinkHiddenUnlessFocused": true,
+        "axeViolations": 0,
+        "axePasses": 25,
+        "axeIncompleteRules": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "name": "Rendered 768px reflow, keyboard access and automated WCAG checks",
+      "status": "passed",
+      "durationMs": 1342,
+      "details": {
+        "viewportWidth": 768,
+        "documentWidth": 768,
+        "connectedDocumentWidth": 768,
+        "skipLinkHiddenUnlessFocused": true,
+        "axeViolations": 0,
+        "axePasses": 25,
+        "axeIncompleteRules": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "name": "Rendered 390px reflow, keyboard access and automated WCAG checks",
+      "status": "passed",
+      "durationMs": 1280,
+      "details": {
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "connectedDocumentWidth": 390,
+        "skipLinkHiddenUnlessFocused": true,
+        "axeViolations": 0,
+        "axePasses": 25,
+        "axeIncompleteRules": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "name": "Rendered 320px reflow, keyboard access and automated WCAG checks",
+      "status": "passed",
+      "durationMs": 1261,
+      "details": {
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "connectedDocumentWidth": 320,
+        "skipLinkHiddenUnlessFocused": true,
+        "axeViolations": 0,
+        "axePasses": 25,
+        "axeIncompleteRules": [
+          "color-contrast"
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "No real wallet extension, transaction broadcast, funded swap or live-chain execution was tested.",
+    "Automated axe checks are not a screen-reader session or a guarantee of accessibility compliance.",
+    "CSS viewport reflow is not native browser zoom or physical-device validation."
+  ]
+}

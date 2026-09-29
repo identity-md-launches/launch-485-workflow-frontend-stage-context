@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-29T22:37:01.117Z",
+  "mode": "isolated service with mocked wallet and receipt RPC; no chain writes",
+  "passed": 7,
+  "results": [
+    "Receipt timeout keeps pending state, rejects duplicate send, retries original hash, and confirms once",
+    "Receipt replacement reason cancelled handled correctly",
+    "Receipt replacement reason replaced handled correctly",
+    "Receipt replacement reason repriced handled correctly",
+    "Reverted receipt surfaces failure and releases pending state",
+    "Live nested quoter liquidity revert maps to an actionable message",
+    "Fresh nonzero token allowance blocks replacement before simulation or signing"
+  ]
+}

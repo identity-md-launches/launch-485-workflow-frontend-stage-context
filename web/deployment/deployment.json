@@ -1,0 +1,36 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-483-workflow-contract-stage-context",
+  "version": 1,
+  "launchId": "2173021b-03eb-48e4-aa29-47e52d97d79c",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Token-only launch for the Great Family connected-wallet Swap experience. LaunchToken in src/LaunchToken.sol has a nonpayable constructor with no arguments, no administrative role and no initialization calls. The factory supplies the LP and MerkleDistributor; the pool pairs against native ETH and has no hook. initialPrice is decimal sqrtPriceX96; when the pinned policy specifies initialMarketCapWei, the deployer derives the effective opening price from policy. Services own policy, signed artifact linkage, source publication, attestation, admission and deployment, followed by frontend publication.",
+    "token": {
+      "name": "Great Family",
+      "symbol": "GFAM",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": []
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0x815357c42f7f7f7d5a064b52c39e3505dfde77292a836d0b58e7ab8a8cd9dc04",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0xddddebad7fb5a6ab35232df717a55ece0e70630d",
+      "blockNumber": 11810468,
+      "creationCodeHash": "68f1017197938b523d4be1a2777adba7eccd1d29c65ca5252f42f144edba6e6a"
+    }
+  ],
+  "sourceCommit": "23af8cd4b30a896759c1fae5beeb7a5ca20aeea2",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "11073a0d110590da19f010fc600767d533797d0d8ab87f2a722b39ab1b049297"
+}
